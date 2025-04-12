@@ -2,8 +2,18 @@
 #define bl '\n'
 #define pb push_back
 #define ll long long
+#define vi vector<int>
+#define vll vector<long long>
+#define mat(n,m,val) vector<vector<int>>(n,vector<int>(m,val));
 using namespace std;
+void ryoikiTenkai(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    //cout.tie(nullptr);
+}
+
 int main(){
+    ryoikiTenkai();
     int t;
     cin>>t;
     while(t--){
