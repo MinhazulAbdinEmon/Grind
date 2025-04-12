@@ -1,3 +1,4 @@
+// Problem link https://codeforces.com/contest/1560/problem/A
 #include <bits/stdc++.h>
 #define bl '\n'
 #define ll long long
