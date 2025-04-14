@@ -30,7 +30,7 @@ void print2D(const vector<vector<T>>& mat){
 }
 
 template <typename T>
-vector<T> kuchiyose1D(int size){
+vector<T> kuchiyose1Djutsu(int size){
     vector<T>arr(size);
     for(int i=0;i<size;i++){
         cin>>arr[i];
@@ -39,7 +39,7 @@ vector<T> kuchiyose1D(int size){
 }
 
 template <typename T>
-vector<vector<T>> kuchiyose2D(int n,int m){
+vector<vector<T>> kuchiyose2Djutsu(int n,int m){
 
     auto grid = mat(n,m,0);
     for(int i=0;i<n;i++){
@@ -65,3 +65,4 @@ int main(){
 
     }
 }
+
