@@ -10,6 +10,12 @@ using vll = vector<long long>;
 #define absoluteSum(a,b) abs((a)+(b))
 #define mat(n,m,val) vector<vector<int>>(n,vector<int>(m,val))
 
+#ifndef ONLINE_JUDGE
+    #define ryoikiTenkai() freopen("input.txt", "r", stdin); freopen("output.txt", "w",stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
+#else
+    #define ryoikiTenkai() ios::sync_with_stdio(false); cin.tie(nullptr);
+#endif
+
 template <typename T>
 void print1D(const vector<T>& arr){
     for(const auto& elem: arr){
@@ -50,11 +56,11 @@ vector<vector<T>> kuchiyose2Djutsu(int n,int m){
     return grid;
 }
 
-void ryoikiTenkai(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    // cout.tie(nullptr);
-}
+//void ryoikiTenkai(){
+//    ios::sync_with_stdio(false);
+//    cin.tie(nullptr);
+//      cout.tie(nullptr);
+//}
 
 int main(){
     ryoikiTenkai();
