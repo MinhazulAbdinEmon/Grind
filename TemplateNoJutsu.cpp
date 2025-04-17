@@ -7,7 +7,7 @@ using ld = long double;
 using vi = vector<int>;
 using vll = vector<long long>;
 #define pb push_back
-#define absoluteSum(a,b) abs((a)+(b))
+
 #define mat(n,m,val) vector<vector<int>>(n,vector<int>(m,val))
 
 #ifndef ONLINE_JUDGE
