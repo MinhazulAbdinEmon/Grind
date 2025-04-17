@@ -1,0 +1,21 @@
+// Problem Link: https://www.geeksforgeeks.org/problems/sort-a-string2943/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
+
+string sort(string s){
+    //complete the function here
+    vector<int>ans(26,0);
+    for(char c: s){
+        ans[c-'a']++;
+        
+    }
+    string res;
+    for(int i=0;i<ans.size();i++){
+        while(ans[i]){
+            
+            res += 'a'+i;
+            
+            
+            ans[i]--;
+        }
+    }
+    return res;
+}
