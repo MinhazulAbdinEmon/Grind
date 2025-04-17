@@ -1,0 +1,40 @@
+// Problem Link : https://leetcode.com/problems/sorting-the-sentence/
+
+class Solution {
+public:
+    string sortSentence(string s) {
+        vector<string>ans;
+        string temp;
+        int i=0,count=0;
+        for(int i=0;i<s.size();i++){
+            if(s[i] == ' '){
+                int position = temp[temp.size()-1]-'0';
+                temp.pop_back();
+                // this if block does the samething as ans.push_back()....but here we need to push back at a specific index thats the difference
+                if(ans.size()<= position){ 
+                    ans.resize(position+1);
+                }
+                ans[position] = temp;
+                count++;
+                temp.clear();
+            }
+            else{
+                temp += s[i];
+            }
+        }
+        int position = temp[temp.size()-1]-'0';
+        temp.pop_back();
+        if(ans.size()<= position){
+            ans.resize(position+1);
+        }
+        ans[position] = temp;
+        count++;
+        temp.clear();
+        string result;
+        for(int i=1;i<=count;i++){
+            result += ans[i]+" ";
+        }
+        result.pop_back();
+        return result;
+    }
+};
