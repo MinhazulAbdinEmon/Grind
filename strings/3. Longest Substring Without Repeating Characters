@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        vector<bool>v(256,0);
+        int i=0,q=0,len=0;
+        while(q<s.size()){
+            while(v[s[q]]){
+                v[s[i]] =0;
+                i++;
+            }
+            v[s[q]] =1;
+            len = max(len,q-i+1);
+            q++;
+            
+        }
+        return len;
+    }
+};
