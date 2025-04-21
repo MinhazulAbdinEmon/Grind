@@ -8,7 +8,7 @@ using vi = vector<int>;
 using vll = vector<long long>;
 #define pb push_back
 
-#define mat(n,m,val) vector<vector<int>>(n,vector<int>(m,val))
+
 
 #ifndef ONLINE_JUDGE
     #define ryoikiTenkai() freopen("input.txt", "r", stdin); freopen("output.txt", "w",stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
@@ -34,9 +34,12 @@ void print2D(const vector<vector<T>>& mat){
         cout<<bl;
     }
 }
-
 template <typename T>
-vector<T> kuchiyose1Djutsu(int size){
+vector<vector<T>> make2D(int n,int m, T val){
+    return vector<vector<T>>(n,vector<T>(m,val));
+}
+template <typename T>
+vector<T> summon1D(int size){
     vector<T>arr(size);
     for(int i=0;i<size;i++){
         cin>>arr[i];
@@ -45,9 +48,9 @@ vector<T> kuchiyose1Djutsu(int size){
 }
 
 template <typename T>
-vector<vector<T>> kuchiyose2Djutsu(int n,int m){
+vector<vector<T>> summon2D(int n,int m){
 
-    auto grid = mat(n,m,0);
+    auto grid = make2D(n,m,T());
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             cin>> grid[i][j];
