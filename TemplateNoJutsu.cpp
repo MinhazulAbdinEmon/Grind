@@ -64,6 +64,15 @@ vector<vector<T>> summon2D(int n,int m){
 //    cin.tie(nullptr);
 //      cout.tie(nullptr);
 //}
+bool pow_of_two(ll a){
+
+    if(a==0)return 0;
+    else if((a&(a-1))==0){ // all zeros(00000...0)
+        return 1;
+    }
+    return 0;
+
+}
 
 int main(){
     ryoikiTenkai();
