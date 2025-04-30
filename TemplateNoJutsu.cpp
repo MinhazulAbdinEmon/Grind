@@ -64,6 +64,14 @@ vector<vector<T>> summon2D(int n,int m){
 //    cin.tie(nullptr);
 //      cout.tie(nullptr);
 //}
+void teleport(int &a, int &b){
+    if(a!=b){ 
+        a = a^b;
+        b = a^b;
+        a = a^b;
+    }
+}
+
 bool pow_of_two(ll a){
 
     if(a==0)return 0;
