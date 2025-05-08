@@ -53,7 +53,14 @@ void teleport(int &a, int &b){
 }
 
 bool pow_of_two(ll a){
-    return a && ((a & (a - 1)) == 0);
+    if(a<=0){
+        return 0;
+    }
+    else if((a&(a-1))==0){
+        return 1;
+    }
+    return 0;
+    
 }
 int bitBlade(ll x){
     int cnt=0;
