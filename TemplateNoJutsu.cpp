@@ -62,7 +62,7 @@ bool pow_of_two(ll a){
     return 0;
     
 }
-int bitBlade(ll x){
+int cntBits(ll x){
     int cnt=0;
     while(x){
         x = x&(x-1);
@@ -97,4 +97,5 @@ int main(){
         solve();
     }
 } 
+
 
