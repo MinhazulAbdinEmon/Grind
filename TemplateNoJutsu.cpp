@@ -7,6 +7,7 @@ using ld = long double;
 using vi = vector<int>;
 using vll = vector<long long>;
 #define pb push_back
+#define mod 1000000007
 
 #ifndef ONLINE_JUDGE
 #define ryoikiTenkai() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
@@ -73,9 +74,12 @@ int cntBits(ll x){
 
 ll intPow(ll a, ll b) {
     ll res = 1;
+    a %= mod;
     while (b > 0) {
-        if (b & 1) res *= a;
-        a *= a;               
+        if (b & 1) {
+            res = (res*a)%mod;
+        }    
+        a = (a*a)%mod;               
         b >>= 1;              
     }
     return res;
@@ -97,5 +101,6 @@ int main(){
         solve();
     }
 } 
+
 
 
