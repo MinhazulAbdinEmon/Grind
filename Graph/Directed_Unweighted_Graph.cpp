@@ -21,3 +21,5 @@ int main(){
         cout<<'\n';
     }
 }
+// T.C --> O(v2)
+// S.C --> O(v2)
