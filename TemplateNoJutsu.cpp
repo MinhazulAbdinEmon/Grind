@@ -1,3 +1,12 @@
+// Tools -> Build system -> new Build System -> save as -> CP.sublime-build
+/* {
+  "working_dir": "$file_path",
+  "selector": "source.c++",
+  "shell_cmd": "g++ -std=c++17 -O2 \"$file\" -o \"$file_base_name.exe\" && \"$file_base_name.exe\""
+}
+
+*/     
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -101,6 +110,7 @@ int main(){
         solve();
     }
 } 
+
 
 
 
