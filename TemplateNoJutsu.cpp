@@ -21,9 +21,9 @@ using vll = vector<long long>;
 #define mod 1000000007
 
 #ifndef ONLINE_JUDGE
-#define ryoikiTenkai() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
+#define fastio() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
 #else
-#define ryoikiTenkai() ios::sync_with_stdio(false); cin.tie(nullptr);
+#define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
 #endif
 
 template <typename T>
@@ -105,13 +105,14 @@ void solve(){
 }
 
 int main(){
-    ryoikiTenkai();
+    fastio();
     int t =1;
     // cin>>t;
     while(t--){
         solve();
     }
 } 
+
 
 
 
