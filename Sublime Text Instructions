@@ -1,0 +1,20 @@
+Step 1 :
+Ctrl + Shift + P
+Type: Install Package Control
+Enter
+Restart Sublime
+
+Step 2 :
+Ctrl + Shift + P
+Package Control: Install Package
+Install:
+BracketHighlighter
+CppFastOlympicCoding
+Restart Sublime once.
+
+
+If you ever see:
+Permission denied main.exe
+Your exe is still running.
+Press Ctrl + Break(PB) or stop build (cntl + shift + p) -> cancel build
+Run again
