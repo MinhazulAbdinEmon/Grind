@@ -1,0 +1,8 @@
+// go to -> preferences -> settings -> copy paste on right side
+{
+    "save_on_focus_lost": true,
+    "auto_refresh": true,
+    "highlight_line": true,
+    "word_wrap": true,
+    "draw_indent_guides": true
+}
