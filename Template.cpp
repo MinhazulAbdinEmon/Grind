@@ -19,13 +19,13 @@ using vi = vector<int>;
 using vll = vector<long long>;
 #define pb push_back
 #define mod 1000000007
-
+// FOR OUTPUT.TXT
 // #ifndef ONLINE_JUDGE
 // #define fastio() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
 // #else
 // #define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
 // #endif
-
+// FOR CPPFASTOLYMPIC
 static inline void fastio() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -122,6 +122,7 @@ int main(){
         solve();
     }
 } 
+
 
 
 
