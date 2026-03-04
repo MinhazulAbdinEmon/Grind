@@ -20,11 +20,21 @@ using vll = vector<long long>;
 #define pb push_back
 #define mod 1000000007
 
-#ifndef ONLINE_JUDGE
-#define fastio() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
-#else
-#define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
+// #ifndef ONLINE_JUDGE
+// #define fastio() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); ios::sync_with_stdio(false); cin.tie(nullptr);
+// #else
+// #define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
+// #endif
+
+static inline void fastio() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+#ifdef LOCAL
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 #endif
+}
 
 template <typename T>
 void print1D(const vector<T>& arr) {
@@ -112,6 +122,7 @@ int main(){
         solve();
     }
 } 
+
 
 
 
